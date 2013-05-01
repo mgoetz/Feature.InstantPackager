@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{583638A8-D998-4141-BBA0-AFD06D334519}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SitecoreLibrary.SharedSource.InstantPackager</RootNamespace>
+    <AssemblyName>SitecoreLibrary.SharedSource.InstantPackager</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Sitecore.Client">
+      <HintPath>..\..\Lib\Sitecore\v6.4.1\Sitecore.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>..\..\Lib\Sitecore\v6.4.1\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.SharedSource.Commons">
+      <HintPath>..\..\lib\Sitecore.SharedSource\Sitecore.SharedSource.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.SharedSource.Contextualizer">
+      <HintPath>..\..\lib\Sitecore.SharedSource\Sitecore.SharedSource.Contextualizer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomSitecore\Commands\AddSubItems.cs" />
+    <Compile Include="CustomSitecore\Commands\Clear.cs" />
+    <Compile Include="CustomSitecore\Commands\AddRelatedItems.cs" />
+    <Compile Include="CustomSitecore\Commands\RemoveRelatedItems.cs" />
+    <Compile Include="CustomSitecore\Commands\View.cs" />
+    <Compile Include="CustomSitecore\Commands\Load.cs" />
+    <Compile Include="CustomSitecore\Commands\RemoveItem.cs" />
+    <Compile Include="CustomSitecore\Commands\GetPackage.cs" />
+    <Compile Include="CustomSitecore\Commands\AddItem.cs" />
+    <Compile Include="CustomSitecore\Commands\DownloadItemPackage.cs" />
+    <Compile Include="CustomSitecore\Commands\RemoveSubItems.cs" />
+    <Compile Include="CustomSitecore\Commands\Save.cs" />
+    <Compile Include="Filters\AbstractInstantPackageFilter.cs" />
+    <Compile Include="Filters\RelatedItemFilters\IfAnySubRelatedItemsInInstantPackageHide.cs" />
+    <Compile Include="Filters\InstantPackageStatusFilters\AbstractInstantPackageStatusFilter.cs" />
+    <Compile Include="Filters\ItemKeyFilters\AbstractItemKeyFilter.cs" />
+    <Compile Include="Filters\RelatedItemFilters\AbstractRelatedItemKeyFilter.cs" />
+    <Compile Include="Filters\RelatedItemFilters\IfNoSubItemsInInstantPackageHide.cs" />
+    <Compile Include="Filters\RelatedItemFilters\IfAllSubItemsInInstantPackageHide.cs" />
+    <Compile Include="Filters\InstantPackageStatusFilters\IfInstantPackageIsNotEmptyHide.cs" />
+    <Compile Include="Filters\InstantPackageStatusFilters\IfInstantPackageIsEmptyHide.cs" />
+    <Compile Include="Filters\ItemKeyFilters\IfCurrentItemNotInInstantPackageHide.cs" />
+    <Compile Include="Filters\ItemKeyFilters\IfCurrentItemInInstantPackageHide.cs" />
+    <Compile Include="PackageManager\InstantPackageManager.cs" />
+    <Compile Include="PackageManager\IPackageManagerDataSource.cs" />
+    <Compile Include="PackageManager\PackageSourceDictionary.cs" />
+    <Compile Include="CustomSitecore\Controls\InstantPackageListCodeBeside.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Cache\ICache.cs" />
+    <Compile Include="Utils\Cache\SessionCache.cs" />
+    <Compile Include="Utils\ItemKeys\IItemKey.cs" />
+    <Compile Include="Utils\ItemKeys\ILanguageWrapper.cs" />
+    <Compile Include="Utils\ItemKeys\ItemKey.cs" />
+    <Compile Include="Utils\ItemKeys\LanguageWrapper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes.txt" />
+    <Content Include="Packages\InstantPackager-0.2.xml" />
+    <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\css\instantpackagerclient.css" />
+    <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\InstantPackageList.xml" />
+    <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\js\instantpackagerclient.js" />
+    <Content Include="Website\sitecore modules\Shell\InstantPackage\css\instantpackagerclient.css" />
+    <Content Include="Website\sitecore modules\Shell\InstantPackage\InstantPackageList.xml" />
+    <Content Include="Website\sitecore modules\Shell\InstantPackage\js\instantpackagerclient.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Packages\InstantPackager-0.2.zip" />
+    <None Include="SitecoreFiles\App_Config\Include\instantpackager.config" />
+    <None Include="Website\App_Config\Include\instantpackager.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

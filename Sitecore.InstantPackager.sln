@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.InstantPackager.Test", "src\Sitecore.InstantPackager.Test\Sitecore.InstantPackager.Test.csproj", "{00129E29-1932-4007-968D-C3DE98A3680E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.InstantPackager", "src\Sitecore.InstantPackager\Sitecore.InstantPackager.csproj", "{583638A8-D998-4141-BBA0-AFD06D334519}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00129E29-1932-4007-968D-C3DE98A3680E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00129E29-1932-4007-968D-C3DE98A3680E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00129E29-1932-4007-968D-C3DE98A3680E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00129E29-1932-4007-968D-C3DE98A3680E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{583638A8-D998-4141-BBA0-AFD06D334519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583638A8-D998-4141-BBA0-AFD06D334519}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583638A8-D998-4141-BBA0-AFD06D334519}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583638A8-D998-4141-BBA0-AFD06D334519}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
