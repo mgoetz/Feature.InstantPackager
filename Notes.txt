@@ -1,0 +1,19 @@
+﻿
+PREREQUISITES:
+This package requires Sitecore 6.5, as well as the Velir Contextualizer module (Velir.SitecoreLibrary.Modules.Contextualizer)
+
+V 0.3:
+-Reduced context menu item set:
+--Download This
+---Item
+---With Children
+--Instant Packager
+---Add to Instant Package (only shown when item is NOT in the Instant Package)
+---Add with SubItems (only shown when item is NOT in the Instant Package)
+---Remove from Instant Package (only shown when item is in the Instant Package)
+---Remove with SubItems (only shown when item is in the Instant Package)
+---Get Instant Package (Only shown when Instant Package has content)
+---View Instant Package
+---Clear Instant Package (Only shown when Instant Package has content)
+
+-View Package Contents implemented using Alert (this will change)
