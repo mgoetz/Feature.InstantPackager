@@ -12,7 +12,7 @@ using Sitecore.SharedSource.Commons.Extensions;
 
 // TODO: Consider a utility IsInstalled modules could use to look for eachother
 // TODO: Use the IsInstalled method to set the filter for the "Synch Instant Package" command
-namespace Sitecore.SharedSource.InstantPackager.Utils.CustomSitecore.Commands
+namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 {
 	[Serializable]
 	internal class RemoveItem : Command

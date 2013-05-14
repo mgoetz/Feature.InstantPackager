@@ -6,7 +6,7 @@ using Sitecore.SharedSource.InstantPackager.Utils.Cache;
 using Sitecore.SharedSource.InstantPackager.Utils.ItemKeys;
 using Sitecore.SharedSource.InstantPackager.Utils.PackageManager;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.Filters.RelatedItemFilters
+namespace Sitecore.SharedSource.InstantPackager.Filters.RelatedItemFilters
 {
 	abstract public class AbstractRelatedItemKeyFilter : AbstractInstantPackageFilter
 	{

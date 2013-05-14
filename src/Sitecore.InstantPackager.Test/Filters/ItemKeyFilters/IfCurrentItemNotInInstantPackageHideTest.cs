@@ -8,7 +8,7 @@ using Sitecore.Data;
 using Sitecore.SharedSource.Commons.Extensions;
 using Sitecore.Data.Items;
 using Sitecore.SharedSource.InstantPackager.Utils.Test.Utility;
-using Sitecore.SharedSource.InstantPackager.Utils.Filters.ItemKeyFilters;
+using Sitecore.SharedSource.InstantPackager.Filters.ItemKeyFilters;
 using Sitecore.SharedSource.InstantPackager.Utils.ItemKeys;
 using Sitecore.SharedSource.InstantPackager.Utils.PackageManager;
 using Version = Sitecore.Data.Version;

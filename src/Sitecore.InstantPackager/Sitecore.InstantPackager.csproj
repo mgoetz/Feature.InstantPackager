@@ -8,8 +8,8 @@
     <ProjectGuid>{583638A8-D998-4141-BBA0-AFD06D334519}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SitecoreLibrary.SharedSource.InstantPackager</RootNamespace>
-    <AssemblyName>SitecoreLibrary.SharedSource.InstantPackager</AssemblyName>
+    <RootNamespace>Sitecore.SharedSource.InstantPackager</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.InstantPackager</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -89,7 +89,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Notes.txt" />
-    <Content Include="Packages\InstantPackager-0.2.xml" />
+    <Content Include="Packages\DownloadThis-0.5.xml" />
+    <Content Include="Packages\InstantPackager-0.5.xml" />
+    <Content Include="Packages\InstantPackageSuite-0.5.xml" />
     <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\css\instantpackagerclient.css" />
     <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\InstantPackageList.xml" />
     <Content Include="SitecoreFiles\sitecore modules\Shell\InstantPackage\js\instantpackagerclient.js" />
@@ -98,8 +100,10 @@
     <Content Include="Website\sitecore modules\Shell\InstantPackage\js\instantpackagerclient.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Packages\InstantPackager-0.2.zip" />
     <None Include="SitecoreFiles\App_Config\Include\instantpackager.config" />
+    <None Include="Packages\DownloadThis-0.5.zip" />
+    <None Include="Packages\InstantPackager-0.5.zip" />
+    <None Include="Packages\InstantPackageSuite-0.5.zip" />
     <None Include="Website\App_Config\Include\instantpackager.config" />
   </ItemGroup>
   <ItemGroup />

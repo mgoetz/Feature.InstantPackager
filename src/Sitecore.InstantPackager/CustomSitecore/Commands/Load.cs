@@ -11,7 +11,7 @@ using Sitecore.Install.Framework;
 using Sitecore.Install.Items;
 using Sitecore.Install.Zip;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.CustomSitecore.Commands
+namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 {
 	[Serializable]
 	internal class Load : Command

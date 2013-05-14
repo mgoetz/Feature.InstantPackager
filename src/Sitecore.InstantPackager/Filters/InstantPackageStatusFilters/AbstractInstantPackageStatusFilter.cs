@@ -1,7 +1,7 @@
 ﻿using Sitecore.SharedSource.Contextualizer.Filters;
 using Sitecore.SharedSource.InstantPackager.Utils.Cache;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.Filters.InstantPackageStatusFilters
+namespace Sitecore.SharedSource.InstantPackager.Filters.InstantPackageStatusFilters
 {
 	abstract public class AbstractInstantPackageStatusFilter : AbstractInstantPackageFilter
 	{

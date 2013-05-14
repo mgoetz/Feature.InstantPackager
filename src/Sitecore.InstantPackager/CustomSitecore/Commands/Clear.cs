@@ -3,7 +3,7 @@ using Sitecore.Diagnostics;
 using Sitecore.SharedSource.InstantPackager.Utils.PackageManager;
 using Sitecore.Shell.Framework.Commands;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.CustomSitecore.Commands
+namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 {
 	[Serializable]
 	internal class Clear : Command

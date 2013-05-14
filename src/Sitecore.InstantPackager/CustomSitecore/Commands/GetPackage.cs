@@ -8,7 +8,7 @@ using Sitecore.Install;
 using Sitecore.Install.Framework;
 using Sitecore.Install.Zip;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.CustomSitecore.Commands
+namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 {
 
 	[Serializable]

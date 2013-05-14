@@ -2,7 +2,7 @@
 using Sitecore.SharedSource.InstantPackager.Utils.Cache;
 using Sitecore.SharedSource.InstantPackager.Utils.PackageManager;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.Filters.InstantPackageStatusFilters
+namespace Sitecore.SharedSource.InstantPackager.Filters.InstantPackageStatusFilters
 {
 	public class IfInstantPackageIsEmptyHide : AbstractInstantPackageStatusFilter
 	{

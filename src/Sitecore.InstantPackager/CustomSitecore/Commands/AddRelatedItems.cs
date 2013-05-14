@@ -9,7 +9,7 @@ using Sitecore.SharedSource.InstantPackager.Utils.PackageManager;
 using Sitecore.Shell.Framework.Commands;
 using Sitecore.SharedSource.Commons.Extensions;
 
-namespace Sitecore.SharedSource.InstantPackager.Utils.CustomSitecore.Commands
+namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 {
 	[Serializable]
 	internal class AddRelatedItems : Command

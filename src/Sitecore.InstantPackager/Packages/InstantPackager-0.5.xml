@@ -1,0 +1,84 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName />
+      <Author />
+      <Version />
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme />
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package Divider/{6648638A-7D7A-47A1-9256-F58F013189DE}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/{D2FB424E-E14E-411F-93C9-45280639BA8F}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Add To Instant Package/{E18775D3-41BE-478D-90A8-3F9B7FB79D2C}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Add With Related Items/{C6CE806E-0A60-43DB-9D1D-13C59F495933}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Add With SubItems/{528CA221-633A-477F-B847-7ED372B66A87}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Clear Instant Package/{1AFD6E50-8B11-4225-96B8-9FFE022C5B30}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Divider/{DA51A5AF-511C-4AEF-87B7-3035D9B974CC}/invariant/0</x-item>
+        <x-item>/core/sitecore/content/Applications/Content Editor/Context Menues/Default/Instant Package/Get Instant Package/{C3F1A170-9BF2-4B27-B114-0D3C960E57B4}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>CoreItems</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/instantpackager.config</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Commons.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.Contextualizer.dll</x-item>
+        <x-item>/bin/Sitecore.SharedSource.InstantPackager.dll</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms>
+            <InstallerConfigurationTransform>
+              <Options>
+                <BehaviourOptions>
+                  <ItemMode>Undefined</ItemMode>
+                  <ItemMergeMode>Undefined</ItemMergeMode>
+                </BehaviourOptions>
+              </Options>
+            </InstallerConfigurationTransform>
+          </Transforms>
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Files</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
