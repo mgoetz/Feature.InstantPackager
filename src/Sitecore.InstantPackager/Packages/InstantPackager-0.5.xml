@@ -1,9 +1,9 @@
 <project>
   <Metadata>
     <metadata>
-      <PackageName />
-      <Author />
-      <Version />
+      <PackageName>Instant Packager</PackageName>
+      <Author>Matt Goetz</Author>
+      <Version>0.5.1</Version>
       <Revision />
       <License />
       <Comment />
