@@ -64,6 +64,7 @@
     <Compile Include="CustomSitecore\Commands\DownloadItemPackage.cs" />
     <Compile Include="CustomSitecore\Commands\RemoveSubItems.cs" />
     <Compile Include="CustomSitecore\Commands\Save.cs" />
+    <Compile Include="CustomSitecore\Gutters\InstantPackageGutter.cs" />
     <Compile Include="Filters\AbstractInstantPackageFilter.cs" />
     <Compile Include="Filters\RelatedItemFilters\IfAnySubRelatedItemsInInstantPackageHide.cs" />
     <Compile Include="Filters\InstantPackageStatusFilters\AbstractInstantPackageStatusFilter.cs" />
@@ -100,10 +101,10 @@
     <Content Include="Website\sitecore modules\Shell\InstantPackage\js\instantpackagerclient.js" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Packages\Download This-0.5.1.zip" />
+    <None Include="Packages\Instant Packager Suite-0.5.1.zip" />
+    <None Include="Packages\Instant Packager-0.5.1.zip" />
     <None Include="SitecoreFiles\App_Config\Include\instantpackager.config" />
-    <None Include="Packages\DownloadThis-0.5.zip" />
-    <None Include="Packages\InstantPackager-0.5.zip" />
-    <None Include="Packages\InstantPackageSuite-0.5.zip" />
     <None Include="Website\App_Config\Include\instantpackager.config" />
   </ItemGroup>
   <ItemGroup />
