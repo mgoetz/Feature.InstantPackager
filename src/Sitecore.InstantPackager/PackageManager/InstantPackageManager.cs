@@ -11,9 +11,9 @@ using Sitecore.SharedSource.InstantPackager.Utils.ItemKeys;
 
 namespace Sitecore.SharedSource.InstantPackager.Utils.PackageManager
 {
-	public class InstantPackageManager 
+	public class InstantPackageManager
 	{
-
+		public static string SortableTimeFormat = "yyyyMMddTHHmmssfff";
 		public static string InstantPackageSessionKey = "InstantPackage.Items";
 		/// <summary>
 		/// The lock object used when writing to the cache.
@@ -69,6 +69,7 @@ namespace Sitecore.SharedSource.InstantPackager.Utils.PackageManager
 			}
 			ExplicitItemSource explicitSource = explicitSourceBuilder.Source;
 			project.Sources.Add(explicitSource);
+
 			return project;
 		}
 
@@ -121,6 +122,21 @@ namespace Sitecore.SharedSource.InstantPackager.Utils.PackageManager
 				}
 			}
 			return retVal;
+		}
+
+		public static PackageProject SetMetaData(PackageProject project, string packageName)
+		{
+			//make this a tested method.  Test for existnace ofauthor, publisher, etc.
+			project.Metadata.PackageName = packageName;
+			project.Metadata.Version = DateTime.Now.ToString(SortableTimeFormat);
+			project.Metadata.Author = Sitecore.Context.User.Name;
+			project.Metadata.Comment = String.Format("Pachaged from: {0}, {1}", Sitecore.Configuration.Settings.InstanceName, Sitecore.Context.Site.SiteInfo.Name);
+			return project;
+		}
+
+		public static PackageProject SetMetaData(PackageProject project)
+		{
+			return SetMetaData(project, "Instant Package");
 		}
 
 		/// <summary>

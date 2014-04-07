@@ -40,8 +40,11 @@ namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 
 			string path = Sitecore.Configuration.Settings.PackagePath;
 			string fileName = string.Format("{0}{1}_{2}_{3}_{4}.zip", currentItemName, (recurse ? "-WithSubItems" : ""),
-			                                currentItemId.Trim(("{}").ToCharArray()), currentItemDB, currentDateTime);
+											currentItemId.Trim(("{}").ToCharArray()), currentItemDB, currentDateTime);
 			string fullPath = path + '\\' + fileName;
+
+			//refactor this into a different object
+			project = InstantPackageManager.SetMetaData(project);
 
 			PackageWriter writer = new PackageWriter(fullPath);
 			IProcessingContext processingContext = new SimpleProcessingContext();
