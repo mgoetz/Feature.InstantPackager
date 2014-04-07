@@ -53,6 +53,11 @@ namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Commands
 					manager.RemoveItem(relatedItem);
 				}
 			}
+
+			//Used to keep the gutter current:
+			String refresh = String.Format("item:refreshchildren(id={0})", currentItem.Parent.ID);
+			Sitecore.Context.ClientPage.ClientResponse.Timer(refresh, 2);
+
 		}
 	}
 }

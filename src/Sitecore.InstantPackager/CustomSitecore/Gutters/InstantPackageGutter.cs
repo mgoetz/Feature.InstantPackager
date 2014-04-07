@@ -21,6 +21,8 @@ namespace Sitecore.SharedSource.InstantPackager.CustomSitecore.Gutters
 				gutterIcon = new GutterIconDescriptor();
 				gutterIcon.Icon = "Core2/32x32/attach.png";
 				gutterIcon.Tooltip = "This item will be downloaded with the next InstantPackage.";
+
+				//TODO: Add a click handler that opens the XAML for the Instant package
 			}
 			return gutterIcon;
 		}
