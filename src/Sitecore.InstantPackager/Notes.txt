@@ -1,6 +1,7 @@
 ﻿
 PREREQUISITES:
 This package requires Sitecore 6.5, as well as the Velir Contextualizer module (Sitecore.SharedSource.Contextualizer)
+w/ SPEAK - SC 7.1
 
 V 0.3:
 -Reduced context menu item set:
