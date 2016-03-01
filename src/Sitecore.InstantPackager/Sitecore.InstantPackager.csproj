@@ -104,6 +104,7 @@
     <None Include="Packages\Download This-0.5.1.zip" />
     <None Include="Packages\Instant Packager Suite-0.5.1.zip" />
     <None Include="Packages\Instant Packager-0.5.1.zip" />
+    <None Include="SitecoreFiles\App_Config\Include\downloadthis.config" />
     <None Include="SitecoreFiles\App_Config\Include\instantpackager.config" />
     <None Include="Website\App_Config\Include\instantpackager.config" />
   </ItemGroup>
